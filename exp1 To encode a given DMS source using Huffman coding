@@ -18,7 +18,7 @@ for i=1:x
   H = H + (P(i) *log2 (1/P(i)));
 end
 disp ('entropy is:');
-disp (H):
+disp (H);
 disp('bits/msg');
 E=(H/avglen) *100;
 disp ('Efficiency is:');
