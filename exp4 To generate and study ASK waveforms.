@@ -5,7 +5,7 @@ n = input ("Enter the input bit:');
 %mapping 1 3V and 0 = 0V; 
 for li = 1:length (n):
   if n(li) == 1; 
-  nn(li) = 3;
+    nn(li) = 3;
   else nn(li) = 0;
   end
 end
@@ -16,9 +16,9 @@ i=1;
 t = 0:0.01:length(n);
 for j = 1:length(t)
   if t(j) <=i;
-  y(j) == nn (i);
+    y(j) == nn (i);
   else y(j) = nn(i);
-  i=i+1;
+    i=i+1;
   endif
 end
 plot (t,y,'-r')
