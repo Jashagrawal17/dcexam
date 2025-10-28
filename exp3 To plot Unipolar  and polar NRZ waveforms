@@ -1,1 +1,28 @@
-
+clc;
+clear all;
+n = input ('Enter the input bit: ');
+%n [1,0,1,0,1];
+%mapping 1 = 3V and 0 = OV
+for ii =  1: length (n)
+  if n(ii) === 1
+    nn(ii) = 5;
+  else
+    nn(ii) = 0;
+  end
+end
+%pulse shapping
+i = 1;
+t = 0:0.01 :length(n);
+for j = 1:length(t)
+  if t(j) <= i
+    y(j) = nn(i);
+  else
+    i=i+1;
+      if i > length (nn)
+          i = length (nn);
+      end
+      y(j) nn (i);
+  end
+end
+plot (t,y,'r-')
+axis ([0 length(n) -10 10])
