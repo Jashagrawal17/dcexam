@@ -8,6 +8,6 @@ G = [eye(k) p]
 m = input ('Enter message word:');
 c = encode (m, n, k, 'linear', G)
 D = decode (c,n,k, 'linear',G)
-H = [p' eye (n-k)]
+H = [p' eye(n-k)]
 R = input ("Enter the received code word")
 s = rem (R*H', 2)
