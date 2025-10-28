@@ -3,7 +3,7 @@ x = input ('Enter the number of symbols:');
 N=1:x;
 disp('the number of symbols are n:');
 disp (N);
-P-input ('Enter the probabilities:'); 
+P=input ('Enter the probabilities:'); 
 disp('The probabilities are:');
 disp(P);
 S = sort(P, 'descend');
